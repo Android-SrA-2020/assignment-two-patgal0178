@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">asn2</string>
+    <string name="next_Value">next</string>
+    <string name="false_val">false</string>
+    <string name="true_val">true</string>
+    <string name="prev_val">prev</string>
+    <string name="about">about</string>
+    <string name="cheat">cheat</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

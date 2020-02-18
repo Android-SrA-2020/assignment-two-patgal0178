@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/game"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/aboutPage"
+        android:name="com.example.asn2.aboutPage"
+        android:label="fragment_about_page"
+        tools:layout="@layout/fragment_about_page" />
+    <fragment
+        android:id="@+id/game"
+        android:name="com.example.asn2.game"
+        android:label="game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_game_to_aboutPage"
+            app:destination="@id/aboutPage" />
+        <action
+            android:id="@+id/action_game_to_cheatPage"
+            app:destination="@id/cheatPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/cheatPage"
+        android:name="com.example.asn2.cheatPage"
+        android:label="fragment_cheat_page"
+        tools:layout="@layout/fragment_cheat_page" />
+</navigation>
